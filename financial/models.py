@@ -24,7 +24,7 @@ class Stock(models.Model):
     symbol = models.CharField(max_length=5)
     name = models.TextField()
     number_of_shares = models.IntegerField()
-    purchase_price = models.DecimalField(max_digits=None, decimal_places=2)
+    purchase_price = models.FloatField()
     date_purchased = models.DateTimeField(blank=True, null=True)
 
     def publish(self):
@@ -39,7 +39,7 @@ class Cryptocurrency(models.Model):
     customer = models.ForeignKey('Customer', on_delete=models.CASCADE)
     name = models.TextField()
     number_of_coins = models.IntegerField()
-    purchase_price = models.DecimalField(max_digits=None, decimal_places=2)
+    purchase_price = models.FloatField()
     date_purchased = models.DateTimeField(blank=True, null=True)
 
     def publish(self):
