@@ -16,7 +16,7 @@
                     <p> Number of Coins Owned: {{ cryptocurrency.number_of_shares }}</p>
                     <p> Purchase Price       : {{ cryptocurrency.purchase_price }}</p>
                     <p> Purchase Date        : {{ cryptocurrency.date_purchased }}</p>
-                    <button>Update</button> &nbsp; <button>Delete</button>
+                    <button><a href="{%  url 'cryptocurrency_edit' pk=cryptocurrency.pk%}">Update</a></button> &nbsp; <button>Delete</button>
                 </div>
             </div>
         </body>
