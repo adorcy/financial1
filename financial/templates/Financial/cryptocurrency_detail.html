@@ -8,13 +8,15 @@
         <body>
             <div>
                 <div>
-                    <h1>{{ cryptocurrency.name }}</h1>
+                    <h1>Cryptocurrency Detail</h1>
+                    <h2>{{ cryptocurrency.name }}</h2>
                     <p> Cryptocurrency ID    : {{ cryptocurrency.id }}</p>
                     <p> Customer Name        : {{ cryptocurrency.customer.name }}</p>
                     <p> Stock Symbol         : {{ cryptocurrency.symbol }}</p>
                     <p> Number of Coins Owned: {{ cryptocurrency.number_of_shares }}</p>
                     <p> Purchase Price       : {{ cryptocurrency.purchase_price }}</p>
                     <p> Purchase Date        : {{ cryptocurrency.date_purchased }}</p>
+                    <button>Update</button> &nbsp; <button>Delete</button>
                 </div>
             </div>
         </body>

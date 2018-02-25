@@ -6,10 +6,12 @@
             <title>Customer List</title>
         </head>
         <body>
+            <h1>Customer List</h1>
+            <button>Add Customer</button>
             <div>
                 {% for customer in customers %}
                     <div>
-                        <h1><a href="{% url 'customer_detail' pk=customer.pk %}">{{ customer.name }}</a></h1>
+                        <h2><a href="{% url 'customer_detail' pk=customer.pk %}">{{ customer.name }}</a></h2>
                         <p> {{ customer.street }}</p>
                         <p> {{ customer.city }}</p>
                         <p> {{ customer.state }}</p>
@@ -18,6 +20,7 @@
                         <p> {{ customer.phone }}</p>
                         <p> {{ customer.created }}</p>
                         <p> {{ customer.modified }}</p>
+                        <button>Update</button>&nbsp;<button>Delete</button>
                     </div>
                 {% endfor %}
             </div>

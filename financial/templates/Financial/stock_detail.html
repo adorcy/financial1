@@ -8,13 +8,15 @@
         <body>
             <div>
                 <div>
-                    <h1>{{ stock.name }}</h1>
+                    <h1>Stock Detail</h1>
+                    <h2>{{ stock.name }}</h2>
                     <p> Stock ID              : {{ stock.id }}</p>
                     <p> Customer Name         : {{ stock.customer.name }}</p>
                     <p> Stock Symbol          : {{ stock.symbol }}</p>
                     <p> Number of Shares Owned: {{ stock.number_of_shares }}</p>
                     <p> Purchase Price        : {{ stock.purchase_price }}</p>
                     <p> Purchase Date         : {{ stock.date_purchased }}</p>
+                    <button>Update</button> &nbsp; <button>Delete</button>
                 </div>
             </div>
         </body>
