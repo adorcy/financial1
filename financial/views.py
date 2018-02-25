@@ -3,7 +3,8 @@ from django.utils import timezone
 from .models import Customer
 from .models import Stock
 from .models import Cryptocurrency
-
+from .forms import CustomerForm
+from django.shortcuts import redirect
 
 def customer_list(request):
     customers = Customer.objects.filter(created__lte=timezone.now()).order_by('created')
@@ -22,3 +23,17 @@ def stock_detail(request, pk):
 def cryptocurrency_detail(request, pk):
     cryptocurrency = get_object_or_404(Cryptocurrency, pk=pk)
     return render(request, 'financial/cryptocurrency_detail.html', {'cryptocurrency': cryptocurrency})
+
+def customer_new(request):
+    form = CustomerForm()
+    if request.method == "POST":
+        form = CustomerForm(request.POST)
+        if form.is_valid():
+            customer = form.save(commit=False)
+            customer.created = timezone.now()
+            customer.save()
+            return redirect('customer_detail', pk=customer.pk)
+    else:
+        form = CustomerForm()
+    return render(request, 'financial/customer_edit.html', {'form': form})
+

@@ -7,7 +7,7 @@
         </head>
         <body>
             <h1>Customer List</h1>
-            <button>Add Customer</button>
+            <button> <a href="{% url 'customer_new' %}">Add Customer</a></button>
             <div>
                 {% for customer in customers %}
                     <div>
