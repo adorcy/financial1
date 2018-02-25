@@ -1,0 +1,22 @@
+{% extends 'financial/base.html' %}
+
+{% block content %}
+    <html>
+        <head>
+            <title>Cryptocurrency Detail</title>
+        </head>
+        <body>
+            <div>
+                <div>
+                    <h1>{{ cryptocurrency.name }}</h1>
+                    <p> Cryptocurrency ID    : {{ cryptocurrency.id }}</p>
+                    <p> Customer Name        : {{ cryptocurrency.customer.name }}</p>
+                    <p> Stock Symbol         : {{ cryptocurrency.symbol }}</p>
+                    <p> Number of Coins Owned: {{ cryptocurrency.number_of_shares }}</p>
+                    <p> Purchase Price       : {{ cryptocurrency.purchase_price }}</p>
+                    <p> Purchase Date        : {{ cryptocurrency.date_purchased }}</p>
+                </div>
+            </div>
+        </body>
+    </html>
+{% endblock %}

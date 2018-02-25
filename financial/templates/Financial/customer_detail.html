@@ -18,7 +18,7 @@
             {% for stock in stocks %}
                 {% if stock.customer.id == customer.id %}
                     <tr>
-                        <td>{{ stock.name }}</td>
+                        <td><a href="{% url 'stock_detail' pk=stock.pk %}">{{ stock.name }}</a></td>
                         <td>{{ stock.symbol }}</td>
                         <td>{{ stock.number_of_shares }}</td>
                         <td>{{ stock.purchase_price }}</td>
@@ -30,7 +30,7 @@
             {% for cryptocurrency in cryptocurrencies %}
                 {% if cryptocurrency.customer.id == customer.id %}
                     <tr>
-                        <td>{{ cryptocurrency.name }}</td>
+                        <td><a href="{% url 'cryptocurrency_detail' pk=cryptocurrency.pk %}">{{ cryptocurrency.name }}</a></td>
                         <td>{{ cryptocurrency.symbol }}</td>
                         <td>{{ cryptocurrency.number_of_coins }}</td>
                         <td>{{ cryptocurrency.purchase_price }}</td>
