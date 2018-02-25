@@ -37,3 +37,15 @@ def customer_new(request):
         form = CustomerForm()
     return render(request, 'financial/customer_edit.html', {'form': form})
 
+def customer_edit(request, pk):
+    customer = get_object_or_404(Customer, pk=pk)
+    if request.method == "POST":
+        form = CustomerForm(request.POST, instance=customer)
+        if form.is_valid():
+            customer = form.save(commit=False)
+            customer.modified = timezone.now()
+            customer.save()
+            return redirect('customer_detail', pk=customer.pk)
+    else:
+        form = CustomerForm(instance=customer)
+    return render(request, 'financial/customer_edit.html', {'form': form})

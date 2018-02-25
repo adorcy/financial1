@@ -17,4 +17,5 @@ urlpatterns = [
     url(r'^stock/(?P<pk>\d+)/$', views.stock_detail, name='stock_detail'),
     url(r'^cryptocurrency/(?P<pk>\d+)/$', views.cryptocurrency_detail, name='cryptocurrency_detail'),
     url(r'^customer/new/$', views.customer_new, name='customer_new'),
+    url(r'^customer/(?P<pk>\d+)/edit/$', views.customer_edit, name='customer_edit'),
 ]

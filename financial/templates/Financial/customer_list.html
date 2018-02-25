@@ -20,7 +20,7 @@
                         <p> {{ customer.phone }}</p>
                         <p> {{ customer.created }}</p>
                         <p> {{ customer.modified }}</p>
-                        <button>Update</button>&nbsp;<button>Delete</button>
+                        <button><a href="{%  url 'customer_edit' pk=customer.pk%}">Update</a></button>&nbsp;<button>Delete</button>
                     </div>
                 {% endfor %}
             </div>
