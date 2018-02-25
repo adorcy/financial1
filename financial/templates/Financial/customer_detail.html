@@ -8,25 +8,33 @@
         <body>
         <div>
         <table>
+        <tr>
+            <th>Asset Name</th>
+            <th>Asset Symbol</th>
+            <th>Number Owned</th>
+            <th>Purchase Price</th>
+            <th>Purchse Date</th>
+        </tr>
             {% for stock in stocks %}
                 {% if stock.customer.id == customer.id %}
                     <tr>
                         <td>{{ stock.name }}</td>
-                        <td> Symbol         : {{ stock.symbol }}</td>
-                        <td> Shares Owned   : {{ stock.number_of_shares }}</td>
-                        <td> Purchase Prices: {{ stock.purchase_price }}</td>
-                        <td> purchase Date  : {{ stock.date_purchased }}</td>
+                        <td>{{ stock.symbol }}</td>
+                        <td>{{ stock.number_of_shares }}</td>
+                        <td>{{ stock.purchase_price }}</td>
+                        <td>{{ stock.date_purchased }}</td>
                     </tr>
                 {% endif %}
             {% endfor %}
 
             {% for cryptocurrency in cryptocurrencies %}
                 {% if cryptocurrency.customer.id == customer.id %}
-                    <tr><td>{{ cryptocurrency.name }}</td>
-                    <td> Symbol         : {{ cryptocurrency.symbol }}</td>
-                    <td> Shares Owned   : {{ cryptocurrency.number_of_coins }}</td>
-                    <td> Purchase Prices: {{ cryptocurrency.purchase_price }}</td>
-                    <td> purchase Date  : {{ cryptocurrency.date_purchased }}</td>
+                    <tr>
+                        <td>{{ cryptocurrency.name }}</td>
+                        <td>{{ cryptocurrency.symbol }}</td>
+                        <td>{{ cryptocurrency.number_of_coins }}</td>
+                        <td>{{ cryptocurrency.purchase_price }}</td>
+                        <td>{{ cryptocurrency.date_purchased }}</td>
                     </tr>
                 {% endif %}
             {% endfor %}
