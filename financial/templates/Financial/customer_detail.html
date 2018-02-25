@@ -6,7 +6,32 @@
             <title>Customer Details</title>
         </head>
         <body>
+        <div>
+        <table>
+            {% for stock in stocks %}
+                {% if stock.customer.id == customer.id %}
+                    <tr>
+                        <td>{{ stock.name }}</td>
+                        <td> Symbol         : {{ stock.symbol }}</td>
+                        <td> Shares Owned   : {{ stock.number_of_shares }}</td>
+                        <td> Purchase Prices: {{ stock.purchase_price }}</td>
+                        <td> purchase Date  : {{ stock.date_purchased }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
 
+            {% for cryptocurrency in cryptocurrencies %}
+                {% if cryptocurrency.customer.id == customer.id %}
+                    <tr><td>{{ cryptocurrency.name }}</td>
+                    <td> Symbol         : {{ cryptocurrency.symbol }}</td>
+                    <td> Shares Owned   : {{ cryptocurrency.number_of_coins }}</td>
+                    <td> Purchase Prices: {{ cryptocurrency.purchase_price }}</td>
+                    <td> purchase Date  : {{ cryptocurrency.date_purchased }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </table>
+        </div>
         </body>
     </html>
 {% endblock %}

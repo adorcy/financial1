@@ -29,6 +29,7 @@ class Stock(models.Model):
 class Cryptocurrency(models.Model):
     id = models.AutoField(primary_key=True)
     customer = models.ForeignKey('Customer', on_delete=models.CASCADE)
+    symbol = models.CharField(max_length=5)
     name = models.TextField()
     number_of_coins = models.IntegerField()
     purchase_price = models.FloatField()
