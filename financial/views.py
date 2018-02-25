@@ -105,3 +105,5 @@ def cryptocurrency_edit(request, pk):
     else:
         form = CryptocurrencyForm(instance=cryptocurrency)
     return render(request, 'financial/cryptocurrency_edit.html', {'form': form})
+
+
