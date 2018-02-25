@@ -6,17 +6,13 @@ class Customer(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.TextField()
     street = models.TextField()
+    city = models.TextField()
     state = models.CharField(max_length=2)
     zip = models.CharField(max_length=5)
     email = models.EmailField()
     phone = models.CharField(max_length=11)
-
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
-
-    def __str__(self):
-        return self.title
+    created = models.DateTimeField(default=timezone.now)
+    modified = models.DateTimeField(default=timezone.now)
 
 class Stock(models.Model):
     id = models.AutoField(primary_key=True)
@@ -26,13 +22,9 @@ class Stock(models.Model):
     number_of_shares = models.IntegerField()
     purchase_price = models.FloatField()
     date_purchased = models.DateTimeField(blank=True, null=True)
+    created = models.DateTimeField(default=timezone.now)
+    modified = models.DateTimeField(default=timezone.now)
 
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
-
-    def __str__(self):
-        return self.title
 
 class Cryptocurrency(models.Model):
     id = models.AutoField(primary_key=True)
@@ -41,10 +33,5 @@ class Cryptocurrency(models.Model):
     number_of_coins = models.IntegerField()
     purchase_price = models.FloatField()
     date_purchased = models.DateTimeField(blank=True, null=True)
-
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
-
-    def __str__(self):
-        return self.title
+    created = models.DateTimeField(default=timezone.now)
+    modified = models.DateTimeField(default=timezone.now)

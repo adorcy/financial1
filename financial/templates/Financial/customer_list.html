@@ -1,0 +1,29 @@
+{% extends 'financial/base.html' %}
+
+{% block content %}
+    <html>
+        <head>
+            <title>Customer List</title>
+        </head>
+        <body>
+            <div>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+            <div>
+                {% for customer in customers %}
+                    <div>
+                        <h1> {{ customer.name }}</h1>
+                        <p> {{ customer.street }}</p>
+                        <p> {{ customer.city }}</p>
+                        <p> {{ customer.state }}</p>
+                        <p> {{ customer.zip }}</p>
+                        <p> {{ customer.email }}</p>
+                        <p> {{ customer.phone }}</p>
+                        <p> {{ customer.created }}</p>
+                        <p> {{ customer.modified }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </body>
+    </html>
+{% endblock %}
