@@ -10,21 +10,21 @@ from django.shortcuts import redirect
 
 def customer_list(request):
     customers = Customer.objects.filter(created__lte=timezone.now()).order_by('created')
-    return render(request, 'financial/templates/customer_list.html', {'customers': customers})
+    return render(request, 'financial/customer_list.html', {'customers': customers})
 
 def customer_detail(request, pk):
     customer = get_object_or_404(Customer, pk=pk)
     stocks = Stock.objects.filter(created__lte=timezone.now()).order_by('date_purchased')
     cryptocurrencies = Cryptocurrency.objects.filter(created__lte=timezone.now()).order_by('date_purchased')
-    return render(request, 'financial/templates/customer_detail.html', {'customer': customer, 'stocks': stocks, 'cryptocurrencies': cryptocurrencies}, )
+    return render(request, 'financial/customer_detail.html', {'customer': customer, 'stocks': stocks, 'cryptocurrencies': cryptocurrencies}, )
 
 def stock_detail(request, pk):
     stock = get_object_or_404(Stock, pk=pk)
-    return render(request, 'financial/templates/stock_detail.html', {'stock': stock})
+    return render(request, 'financial/stock_detail.html', {'stock': stock})
 
 def cryptocurrency_detail(request, pk):
     cryptocurrency = get_object_or_404(Cryptocurrency, pk=pk)
-    return render(request, 'financial/templates/cryptocurrency_detail.html', {'cryptocurrency': cryptocurrency})
+    return render(request, 'financial/cryptocurrency_detail.html', {'cryptocurrency': cryptocurrency})
 
 def customer_new(request):
     form = CustomerForm()
@@ -37,7 +37,7 @@ def customer_new(request):
             return redirect('customer_detail', pk=customer.pk)
     else:
         form = CustomerForm()
-    return render(request, 'financial/templates/customer_edit.html', {'form': form})
+    return render(request, 'financial/customer_edit.html', {'form': form})
 
 def customer_edit(request, pk):
     customer = get_object_or_404(Customer, pk=pk)
@@ -50,7 +50,7 @@ def customer_edit(request, pk):
             return redirect('customer_detail', pk=customer.pk)
     else:
         form = CustomerForm(instance=customer)
-    return render(request, 'financial/templates/customer_edit.html', {'form': form})
+    return render(request, 'financial/customer_edit.html', {'form': form})
 
 def stock_new(request):
     form = StockForm()
@@ -64,7 +64,7 @@ def stock_new(request):
             return redirect('stock_detail', pk=stock.pk)
     else:
         form = StockForm()
-    return render(request, 'financial/templates/stock_edit.html', {'form': form})
+    return render(request, 'financial/stock_edit.html', {'form': form})
 
 def cryptocurrency_new(request):
     form = CryptocurrencyForm()
@@ -78,7 +78,7 @@ def cryptocurrency_new(request):
             return redirect('cryptocurrency_detail', pk=cryptocurrency.pk)
     else:
         form = CryptocurrencyForm()
-    return render(request, 'financial/templates/cryptocurrency_edit.html', {'form': form})
+    return render(request, 'financial/cryptocurrency_edit.html', {'form': form})
 
 def stock_edit(request, pk):
     stock = get_object_or_404(Stock, pk=pk)
@@ -91,7 +91,7 @@ def stock_edit(request, pk):
             return redirect('stock_detail', pk=stock.pk)
     else:
         form = StockForm(instance=stock)
-    return render(request, 'financial/templates/stock_edit.html', {'form': form})
+    return render(request, 'financial/stock_edit.html', {'form': form})
 
 def cryptocurrency_edit(request, pk):
     cryptocurrency = get_object_or_404(Cryptocurrency, pk=pk)
@@ -104,6 +104,6 @@ def cryptocurrency_edit(request, pk):
             return redirect('cryptocurrency_detail', pk=cryptocurrency.pk)
     else:
         form = CryptocurrencyForm(instance=cryptocurrency)
-    return render(request, 'financial/templates/cryptocurrency_edit.html', {'form': form})
+    return render(request, 'financial/cryptocurrency_edit.html', {'form': form})
 
 
