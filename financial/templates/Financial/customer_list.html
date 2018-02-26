@@ -6,21 +6,20 @@
             <title>Customer List</title>
         </head>
         <body>
-            <h1>Customer List</h1>
-            <button> <a href="{% url 'customer_new' %}">Add Customer</a></button>
-            <div>
+        <h1>Customer List</h1> <button> <a class="button-link"href="{% url 'customer_new' %}">Add Customer</a></button>
+            <div class="customer-list">
                 {% for customer in customers %}
                     <div>
-                        <h2><a href="{% url 'customer_detail' pk=customer.pk %}">{{ customer.name }}</a></h2>
-                        <p> {{ customer.street }}</p>
-                        <p> {{ customer.city }}</p>
-                        <p> {{ customer.state }}</p>
-                        <p> {{ customer.zip }}</p>
-                        <p> {{ customer.email }}</p>
-                        <p> {{ customer.phone }}</p>
-                        <p> {{ customer.created }}</p>
-                        <p> {{ customer.modified }}</p>
-                        <button><a href="{%  url 'customer_edit' pk=customer.pk%}">Update</a></button>&nbsp;
+                        <h2 class="customer-name"><a href="{% url 'customer_detail' pk=customer.pk %}">{{ customer.name }}</a></h2>
+                        <p class="customer-info"> {{ customer.street }}</p>
+                        <p class="customer-info"> {{ customer.city }}</p>
+                        <p class="customer-info"> {{ customer.state }}</p>
+                        <p class="customer-info"> {{ customer.zip }}</p>
+                        <p class="customer-info"> {{ customer.email }}</p>
+                        <p class="customer-info"> {{ customer.phone }}</p>
+                        <p class="customer-info"> {{ customer.created }}</p>
+                        <p class="customer-info"> {{ customer.modified }}</p>
+                        <button><a class="button-link" href="{%  url 'customer_edit' pk=customer.pk%}">Update</a></button>&nbsp;
                     </div>
                 {% endfor %}
             </div>

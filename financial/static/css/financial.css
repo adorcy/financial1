@@ -1,0 +1,37 @@
+h1 {
+
+}
+
+.customer-name {
+    text-decoration: underline;
+}
+
+.customer-info {
+    padding-left: 50px;
+    line-height: .2;
+}
+
+table{
+    border: 1px solid black;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+th {
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 1px solid black;
+}
+
+.button-link{
+    color: black;
+}
