@@ -15,7 +15,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="customer_detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/financial/templates/customer_detail.html">
+        <entry file="file://$PROJECT_DIR$/financial/templates/financial/customer_detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="697">
               <caret line="41" column="143" lean-forward="false" selection-start-line="41" selection-start-column="143" selection-end-line="41" selection-end-column="143" />
@@ -39,7 +39,7 @@
         </entry>
       </file>
       <file leaf-file-name="stock_detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/financial/templates/stock_detail.html">
+        <entry file="file://$PROJECT_DIR$/financial/templates/financial/stock_detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
@@ -49,7 +49,7 @@
         </entry>
       </file>
       <file leaf-file-name="cryptocurrency_detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/financial/templates/cryptocurrency_detail.html">
+        <entry file="file://$PROJECT_DIR$/financial/templates/financial/cryptocurrency_detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
@@ -59,10 +59,10 @@
         </entry>
       </file>
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/financial/templates/base.html">
+        <entry file="file://$PROJECT_DIR$/financial/templates/financial/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+              <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -115,7 +115,7 @@
         </entry>
       </file>
       <file leaf-file-name="stock_edit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/financial/templates/stock_edit.html">
+        <entry file="file://$PROJECT_DIR$/financial/templates/financial/stock_edit.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
@@ -176,7 +176,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1738" />
     <option name="y" value="-17" />
     <option name="width" value="1394" />
@@ -234,6 +234,13 @@
             <path>
               <item name="financial1" type="b2602c69:ProjectViewProjectNode" />
               <item name="financial1" type="462c0819:PsiDirectoryNode" />
+              <item name="financial" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="financial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="financial1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="financial1" type="462c0819:PsiDirectoryNode" />
               <item name="financial1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -252,6 +259,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="M:\School\UNO Spring 2018\Distributed systems\Assignment 2\financial1\financial\templates\financial" />
       <recent name="M:\School\UNO Spring 2018\Distributed systems\Assignment 2\financial1\financial\templates" />
       <recent name="M:\School\UNO Spring 2018\Distributed systems\Assignment 2\financial1\financial\static\css" />
       <recent name="M:\School\UNO Spring 2018\Distributed systems\Assignment 2\financial1\financial\templates\Financial" />
@@ -320,7 +328,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="3456" height="1416" extended-state="7" />
+    <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -355,7 +363,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/financial/templates/customer_detail.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/customer_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -375,7 +383,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/templates/stock_detail.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/stock_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
@@ -383,7 +391,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/templates/cryptocurrency_detail.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/cryptocurrency_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
@@ -391,7 +399,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
@@ -437,7 +445,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/templates/stock_edit.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/stock_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
@@ -493,7 +501,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/templates/customer_edit.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/customer_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="14" />
@@ -501,7 +509,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/templates/cryptocurrency_edit.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/cryptocurrency_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
@@ -509,17 +517,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/templates/customer_list.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/customer_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="62" lean-forward="false" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
           <folding>
-            <element signature="e#1246#1252#0#HTML" expanded="true" />
+            <element signature="e#1246#1252#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/templates/stock_edit.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/stock_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
@@ -527,7 +535,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/templates/stock_detail.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/stock_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
@@ -535,7 +543,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/templates/cryptocurrency_detail.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/cryptocurrency_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
@@ -543,7 +551,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/templates/customer_detail.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/customer_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="143" lean-forward="false" selection-start-line="41" selection-start-column="143" selection-end-line="41" selection-end-column="143" />
@@ -583,10 +591,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/financial/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/financial/templates/financial/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding />
         </state>
       </provider>
