@@ -14,17 +14,22 @@ class Customer(models.Model):
     created = models.DateTimeField(default=timezone.now)
     modified = models.DateTimeField(default=timezone.now)
 
+    def __str__(self):
+        return self.name
+
 class Stock(models.Model):
     id = models.AutoField(primary_key=True)
     customer = models.ForeignKey('Customer', on_delete=models.CASCADE)
     symbol = models.CharField(max_length=5)
     name = models.TextField()
-    number_of_shares = models.IntegerField()
-    purchase_price = models.FloatField()
+    number_of_shares = models.FloatField()
+    purchase_price = models.DecimalField(max_digits=20, decimal_places=2)
     date_purchased = models.DateTimeField(blank=True, null=True)
     created = models.DateTimeField(default=timezone.now)
     modified = models.DateTimeField(default=timezone.now)
 
+    def __str__(self):
+        return "{}: {}".format(self.customer.name, self.symbol)
 
 class Cryptocurrency(models.Model):
     id = models.AutoField(primary_key=True)
